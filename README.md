@@ -1,5 +1,5 @@
 # web-server
-web server written in Javascript.
+web server written in JavaScript.
 
 To run the server: "node webserver.js"
 
