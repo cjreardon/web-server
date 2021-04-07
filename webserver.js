@@ -11,9 +11,9 @@ const server = net.createServer((socket) => {
 
         if (request.method == "GET"){
             if (fs.existsSync(`.${request.path}`)){
-                socket.write("HTTP/1.1 200 OK")
+                socket.write("HTTP/1.1 200 OK\n")
             } else {
-                socket.write("HTTP/1.1 404 Not Found")
+                socket.write("HTTP/1.1 404 Not Found\n")
             }
         }
     })
